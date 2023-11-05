@@ -1,0 +1,11 @@
+{
+    "name": "First ex",
+    "version": "1.0.0",
+    "description": "first ex",
+    "manifest_version": 3,
+    "author": "Atilay Mayadag",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "First ex"
+    }
+}
