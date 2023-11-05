@@ -1,11 +1,11 @@
 {
-    "name": "First ex",
+    "name": "Verbs chrome extension",
     "version": "1.0.0",
-    "description": "first ex",
+    "description": "Verbs chrome extension",
     "manifest_version": 3,
-    "author": "Atilay Mayadag",
+    "author": "Atilay Mayadag, Yusuf Kurekci",
     "action":{
         "default_popup": "index.html",
-        "default_title": "First ex"
+        "default_title": "Verbs chrome extension"
     }
 }
