@@ -7,17 +7,24 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
-    <div class="container mt-3" style="width: 450px; border: 1px solid;">
+    <div class="container mt-3" style="width: 450px; border: 1px solid;" id="app">
         <div class="row">
             <div class="col">
-              <h3 id="eng-elem"></h3>
-              <h1 id="fr-elem"></h1>
-              <h2 id="fr-sentence-elem"></h2>
+              <h3 id="eng-elem">{{ words[selected].english_verb }}</h3>
+              <h1 id="fr-elem">{{ words[selected].french_verb }}</h1>
+
+              <ul>
+                <li v-for="(item, index) in words[selected].present" v-html="cekimFunc(item,index)">
+                 
+                </li>
+              </ul>
+             <button class="btn btn-primary" id="btn" @click="getRandomVerb()">Random</button>
             </div>
           </div>
     </div>
 </body>
-<script src="verbs.js"></script>
+<script src="data.js"></script>
+<script src="vue.min.js"></script>
 
 <script src="script.js"></script>
 
